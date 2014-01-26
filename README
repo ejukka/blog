@@ -1,4 +1,8 @@
-This is your new Play application
+Jukka Edvardsson Blog
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+This is my sample application. Where I demostrated Play, Bootstrap and AngularJS.
+
+- Play 2.2.1
+- Bootstrap
+- AngularJS

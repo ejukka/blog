@@ -10,7 +10,7 @@ object Application extends Controller {
   }
   
   def blog = Action {
-    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.hello())
   }
 
 }
