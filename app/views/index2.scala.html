@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Jukka Edvardsson Blog</title>
+
+    <!-- Bootstrap core CSS -->
+<link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.css"))'>
+<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
+<script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.js"))'></script>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Jukka Edvardsson Blog</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#about">Aboutn</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">My old stuff</li>
+                    <li><a href="#">old web site</a></li>
+                    <li><a href="#">Master's thesis</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+           <img src="@routes.Assets.at("images/dreamland_big.png")" class="img-responsive" alt="Responsive image" type="image">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>My current tech stack: Play 2.2.1, AngularJS, Bootstrap</h1>
+              <p>These are the tech tools I am currently using. Hopefully there is coming more cool dev stuff. </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Play</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <img src="@routes.Assets.at("images/dreamland_city_1500x500_up2.jpg")" class="img-responsive" alt="Responsive image" type="image">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Next I want to learn!</h1>
+              <p>Node.js and MongoDB.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <img src="@routes.Assets.at("images/dreamland_city_1500x500.jpg")" class="img-responsive" alt="Responsive image" type="image">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Want book I am reading currently</h1>
+              <p>Erik Ries Lean Startup</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="">
+          <h2>Play with Scala</h2>
+          <p>I have strong background with Java. i have worked a lot with J2EE world. Spring is okeyish framework, but it is very unefficient. XML is not for cool kids. But then I find out Play! It was love at the first sight. And if you add Play and Scala, thats totally cool. so bye bye old school Java frameworks..</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="">
+          <h2>AngularJs and Twitter Bootstrap</h2>
+          <p>JavaScript is hot. JavaScript is everywhere. I wanted to check put Google's Angular Framework. Also how to add magnificient Twitter Bootstrap for Angular. With these two cool and effient tool you could make very good looking web sites..</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" data-src="holder.js/140x140" alt="">
+          <h2>Heroku</h2>
+          <p>I first steps to cloud computing. I amazed how easy and efficient it is. just 'git push heroku master' and boom everything is up and running. I totally love Heroku </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+            <hr class="featurette-divider">
+      <div class="featurette" id="about">
+       <img class="featurette-image pull-left" src="@routes.Assets.at("images/twitter.png")" width="200" height="150">
+        <h2 class="featurette-heading">Check out my twitter feeds <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Twitter is very good information channel for all software professionals</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette" id="contact">
+        <img class="featurette-image pull-left" src="@routes.Assets.at("images/Octocat.png")" width="200" height="150">
+        <h2 class="featurette-heading">Github <span class="muted">great place for social coding</span></h2>
+        <p class="lead">Github is greate place for social coding. I have some test protos on the github account</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="@routes.Assets.at("images/linkedin.png")" width="200" height="150">
+        <h2 class="featurette-heading">What to contact me? <span class="muted">contact me through linkedin.</span></h2>
+        <p class="lead">Check me linkedin profile and find out more about me.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>
