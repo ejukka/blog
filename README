@@ -8,8 +8,11 @@ This is my sample application. Where I demostrated Play, Bootstrap and AngularJS
 - AngularJS
 
 
-Install MongoDb
+Install MongoDb on OSX
 
 for OSX use homebrew
 brew update
-brew install 
+brew install mongodb
+mondodb
+
+check full installation guide http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/
