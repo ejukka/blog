@@ -13,18 +13,20 @@ import play.api.Play
 import utils.Config
 
 class ConfigTest extends Specification with Config {
-  running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
-
     @Test def getConfigNotFound() {
+      running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
       val notFound = conf("testi")
       Assert.assertNotNull(notFound)
-      Assert.assertEquals("notFound", notFound)
+      Assert.assertEquals("key missing", notFound)
+    }
     }
 
     @Test def getConfigFound() {
+        running(FakeApplication(additionalConfiguration = inMemoryDatabase())) {
       val found = conf("test.application")
       Assert.assertNotNull(found)
       Assert.assertEquals("not-test", found)
     }
-  }
+    }
+
 }
