@@ -6,3 +6,10 @@ This is my sample application. Where I demostrated Play, Bootstrap and AngularJS
 - Play 2.2.1
 - Bootstrap
 - AngularJS
+
+
+Install MongoDb
+
+for OSX use homebrew
+brew update
+brew install 
