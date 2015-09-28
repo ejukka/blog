@@ -10,5 +10,4 @@ trait Config {
   def conf(key: String) = {
     config.getString(key).getOrElse("key missing")
   }
-
 }
