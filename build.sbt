@@ -6,7 +6,7 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache
-) 
+)
 
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.2.1",
