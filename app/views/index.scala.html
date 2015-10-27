@@ -1,4 +1,4 @@
-@(title: String)
+@(title: String, text: Text, year: String)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,8 +49,8 @@
                     <li><a href="#contact">Contact</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">My old stuff</li>
-                    <li><a href="http://jukedv.pp.fi/test/dreamland/">old web site</a></li>
-                    <li><a href="http://jukedv.pp.fi/test/edvardsson_jukka_diplomityo.pdf">Master's thesis</a></li>
+                    <li><a href="@text.oldSiteUrl">old web site</a></li>
+                    <li><a href="@text.masterThesisURL">Master's thesis</a></li>
                   </ul>
                 </li>
               </ul>
@@ -76,8 +76,8 @@
            <img src="@routes.Assets.at("images/dreamland_big.png")" class="img-responsive" alt="Responsive image" type="image">
           <div class="container">
             <div class="carousel-caption">
-              <h1>My current tech stack: Play 2.2.1, AngularJS, Bootstrap</h1>
-              <p>These are the tech tools I am currently using. Hopefully there is coming more cool dev stuff. </p>
+              <h1>@text.firstCaruselHeader</h1>
+              <p>@text.firstCaruselText</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Play</a></p>
             </div>
           </div>
@@ -86,8 +86,8 @@
          <img src="@routes.Assets.at("images/dreamland_city_1500x500_up2.jpg")" class="img-responsive" alt="Responsive image" type="image">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Next I want to learn!</h1>
-              <p>Node.js and MongoDB.</p>
+              <h1>@text.secondCaruselHeader</h1>
+              <p>@text.secondCaruselText</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
@@ -96,8 +96,8 @@
          <img src="@routes.Assets.at("images/dreamland_city_1500x500.jpg")" class="img-responsive" alt="Responsive image" type="image">
           <div class="container">
             <div class="carousel-caption">
-              <h1>What book I am reading currently</h1>
-              <p>Erik Ries:  Lean Startup</p>
+              <h1>@text.thirdCaruselHeader</h1>
+              <p>@text.thirdCaruselText</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
@@ -120,20 +120,20 @@
       <div class="row">
         <div class="col-lg-4">
           <img class="img-circle" data-src="holder.js/140x140" alt="">
-          <h2>Play with Scala</h2>
-          <p>I have strong background with Java. i have worked a lot with J2EE world. Spring is okeyish framework, but it is very unefficient. XML is not for cool kids. But then I find out Play! It was love at the first sight. And if you add Play and Scala, thats totally cool. so bye bye old school Java frameworks..</p>
+          <h2>@text.firstHeader</h2>
+          <p>@text.firstText</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" data-src="holder.js/140x140" alt="">
-          <h2>AngularJs and Twitter Bootstrap</h2>
-          <p>JavaScript is hot. JavaScript is everywhere. I wanted to check put Google's Angular Framework. Also how to add magnificient Twitter Bootstrap for Angular. With these two cool and effient tool you could make very good looking web sites..</p>
+          <h2>@text.secondHeader</h2>
+          <p>@text.secondText</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" data-src="holder.js/140x140" alt="">
-          <h2>Heroku</h2>
-          <p>I first steps to cloud computing. I amazed how easy and efficient it is. just 'git push heroku master' and boom everything is up and running. I totally love Heroku </p>
+          <h2>@text.thirdHeader</h2>
+          <p>@text.thirdText</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -145,7 +145,7 @@
 
             <hr class="featurette-divider">
       <div class="featurette" id="about">
-       <a href="http://www.twitter.com/ejukka"><img class="featurette-image pull-left" src="@routes.Assets.at("images/Twitter_bird_logo_2012.svg")" width="100" height="75">
+       <a href="@text.twitterLink"><img class="featurette-image pull-left" src="@routes.Assets.at("images/Twitter_bird_logo_2012.svg")" width="100" height="75">
         <h2 class="featurette-heading">Check out my twitter feeds <span class="muted"></a>It'll blow your mind.</span></h2>
         <p class="lead">Twitter is very good information channel for all software professionals</p>
       </div>
@@ -153,7 +153,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette" id="contact">
-        <a href="http://github.com"> <img class="featurette-image pull-left" src="@routes.Assets.at("images/github-circled-alt2.svg")" width="100" height="75">
+        <a href="@text.githubLink"> <img class="featurette-image pull-left" src="@routes.Assets.at("images/github-circled-alt2.svg")" width="100" height="75">
         <h2 class="featurette-heading">Github <span class="muted"></a>great place for social coding</span></h2>
         <p class="lead">Github is greate place for social coding. I have some test protos on the github account</p>
       </div>
@@ -161,7 +161,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-         <a href="http://fi.linkedin.com/pub/jukka-edvardsson/5/5b/4b6"><img class="featurette-image pull-left" src="@routes.Assets.at("images/Linkedin_icon.svg")" width="100" height="75">
+         <a href="@text.linkedinLink"><img class="featurette-image pull-left" src="@routes.Assets.at("images/Linkedin_icon.svg")" width="100" height="75">
           <h2 class="featurette-heading">Want to contact me? <span class="muted"></a>contact me through linkedin.</span></h2>
         <p class="lead">Check me linkedin profile and find out more about me.</p>
       </div>
@@ -174,7 +174,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 @title. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy;@year @title. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
